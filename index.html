@@ -4,17 +4,68 @@
     <meta charset="UTF-8">
     <title>Crystal Collector</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="assets/javascript/game.js"></script>
+    <script src="javascript/game.js"></script>
 
 </head>
 <body>
-
+    <!--crystalscollector header-->
+<container>
+<div class="row">
+    <div class="col-4">
+        <h1>CrystalsCollector</h1>        
+    </div>
+</div>
+</container>
+<!--instructions-->
+<container >
+    <div class="row">
+        <div class="col-5" id="instructions">
+            <p>You will be give a random number at the start of the game</p>
+            <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+            <p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
+            <p>The value of each crystal is hidden from you until you click on it.</p>
+            <p>Each time when the game starts, the game will change the values of each crystal.</p>
+        </div>
+    </div>
+</container>
+<container>
+    <div class="row">
+        <!--random number-->
+        <div class="col-2" id="randnum">x</div>
+        <!--wins/losses counter-->
+        <div class="col-1" id="winlose">
+            <p id="winner">Wins:</p>
+            <p id="loser">Losses:</p>
+        </div>
+    </div>
+</container>
+<!--row of four buttons (crystals) -->
+<container>
+    <div class="row">
+        <div class="col-1.75 crystal"><button id="redbutton"><img src="images/red-heart.jpg"></button></div>
+        <div class="col-1.75 crystal"><button id="whitebutton"><img src="images/white-heart.jpg"></button></div>
+        <div class="col-1.75 crystal"><button id="greenbutton"><img src="images/green-heart.jpg"></button></div>
+        <div class="col-1.75 crystal"><button id="bluebutton"><img src="images/blue-heart.jpg"></button></div>
+    </div>
+</container>
+<!--Your total score is:-->
+<container>
+    <div class="row">
+        <div class="col-3" id="totalscore">Your total Score Is: </div>
+    </div>
+</container>
+<!--total score-->
+<container>
+        <div class="row">
+            <div class="col-3" id="score"></div>
+        </div>
+    </container>
 </body>
 </html>
-<!--crystalscollector header-->
-<!--instructions-->
-<!--random number--><!--wins/losses counter-->
-<!--row of four buttons (crystals) <button onclick="myFunction()"><img src="your image name here.png"></button> -->
-<!--Your total score is:-->
-<!--total score-->
+
+
+
+
+

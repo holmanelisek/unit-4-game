@@ -1,8 +1,63 @@
+/*body: font family*/
 /*background*/
-/*crystalscollector header*/
-/*instructions*/
-/*random number*/
-/*wins and losses*/
+/*crystalscollector header
+text color: white
+background color orange*/
+h1 {
+    background-color: orange;
+    color: white;
+    text-align: center;
+    padding:5px;
+    margin-bottom:0px;
+}
+/*instructions
+background color cream
+text color green*/
+#instructions{
+    background-color: beige;
+    color: green;
+}
+#randnum{
+    background-color: green;
+    color:purple;
+    font-size: 30px;
+    margin-right:10px;
+}
+#winlose{
+    background-color: teal;
+    color: green;
+}
+img {
+    height: 120px;
+    width: 120px;
+    padding:0px;
+}
+button{
+    padding:0px;
+}
+div{
+    padding:5px;
+}
+#totalscore{
+    background-color: teal;
+    color: white;
+}
+#score{
+    background-color: teal;
+    color: white;
+    height:125px;
+    font-size: 25px;
+}
+body{
+    background-image: url("https://image.freepik.com/free-vector/decorative-pattern-background-teal-colour_1048-6592.jpg")
+}
+
+
+/*random number
+background color green
+text color purple?*/
+/*wins and losses
+green text teal background*/
 /*gem buttons*/
 /*your total score is*/
 /*total score*

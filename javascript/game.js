@@ -5,32 +5,47 @@ $(document).ready(function() {
     var playerScore = 0;
     var wins = 0;
     var losses = 0;
-
+    
     //randomly set goal number between 19 and 120
     goalNumber = Math.floor(Math.random() * 101) + 19;  
-
+    $("#randnum").html(goalNumber);
+    
+    $("#redbutton").click(function(){
+        crystalclick(0);
+      })
+    $("#whitebutton").click(function(){
+        crystalclick(1);
+    })
+    $("#greenbutton").click(function(){
+        crystalclick(2);
+    })
+    $("#bluebutton").click(function(){
+        crystalclick(3);
+    })
     //runs when a crystal is clicked, with a variable indexing which crystal is selected
     function crystalclick(x){
         if(crystalvalues[x]==0){
-            crystalvalues[x]==Math.floor(Math.random() * 12) + 1;
+            crystalvalues[x]=Math.floor(Math.random() * 12) + 1;
         }
         //add crystal value to playerScore
-        playerScore = playerScore + crystalvalue[x];
+        playerScore = playerScore + crystalvalues[x];
         //update player score display
-        //YOU DO NOT HAVE CODE HERE BABE YOU NEED CODE HERE
+        $("#score").html(playerScore);
         //if player reaches or goes over the goal, they're starting a new game
         if(playerScore>=goalNumber){
-            //UPDATE DISPLAYS
             playerScore = 0;
+            $("#score").html(playerScore);
             crystalvalues = [0,0,0,0];
             goalNumber = Math.floor(Math.random() * 101) + 19;
             //if player reaches goal number, win!
             if(playerScore==goalNumber){
                 wins++;
+                $("#winner").html("Wins:"+wins);
             }
             //if they went over, lose
             else {
                 losses++;
+                $("#loser").html("Losses:" + losses);
             }
         }
         //otherwise, just go ahead and click again!
