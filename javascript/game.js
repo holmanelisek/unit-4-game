@@ -37,6 +37,7 @@ $(document).ready(function() {
             $("#score").html(playerScore);
             crystalvalues = [0,0,0,0];
             goalNumber = Math.floor(Math.random() * 101) + 19;
+            $("#randnum").html(goalNumber);
             //if player reaches goal number, win!
             if(playerScore==goalNumber){
                 wins++;
